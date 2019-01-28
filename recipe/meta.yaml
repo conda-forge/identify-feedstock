@@ -1,7 +1,7 @@
 {% set name = "identify" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "19a1033a24aa10872beaeb91cbdbd665a205d279b4a7ab9c6e7ff1a9c799fbaa" %}
+{% set hash_value = "d3356c776b37c88e31b5666c6c5b533f345832e2bf5c60e42565e0aaacd42275" %}
 
 package:
   name: '{{ name|lower }}'
