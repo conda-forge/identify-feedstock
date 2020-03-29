@@ -1,16 +1,14 @@
 {% set name = "identify" %}
-{% set version = "1.4.11" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "c7f721750ea07a1d94fd0d4bfd505c04a8c39bbbc459504f92fa65c3272dd00f" %}
+{% set version = "1.4.13" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
+  fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/chriskuehl/identify/archive/v{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  sha256: ed5a0d9d4058eea5e2629d172b536a3a8cabb01f6b61e9a064c373b059c79864
 
 build:
   number: 0
