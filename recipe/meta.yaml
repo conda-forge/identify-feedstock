@@ -1,5 +1,5 @@
 {% set name = "identify" %}
-{% set version = "1.4.15" %}
+{% set version = "1.4.16" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/chriskuehl/identify/archive/v{{ version }}.tar.gz
-  sha256: 916180f074518c962c78e08d3da65e0f1861452f2789e622b0d7cbef9ddbbebb
+  sha256: feab3fa50601ade5104bd0708a2c1628a4ca0ceaba822761e7a00f9bf861ec0c
 
 build:
   number: 0
