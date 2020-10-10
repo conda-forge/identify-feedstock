@@ -5,11 +5,9 @@ Home: https://github.com/chriskuehl/identify
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/identify-feedstock/blob/master/LICENSE.txt)
 
 Summary: File identification library for Python
-
-
 
 Current build status
 ====================
