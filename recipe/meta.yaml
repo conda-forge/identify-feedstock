@@ -1,5 +1,5 @@
 {% set name = "identify" %}
-{% set version = "1.5.9" %}
+{% set version = "1.5.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/chriskuehl/identify/archive/v{{ version }}.tar.gz
-  sha256: f09f58ea88eba4e44a626e85d96cba76d6ec7217e1dcce5ccf393f74738f949c
+  sha256: 6c278ce66ab4cc3cfd106ea98eaca2b7e03d87f547b54fe55cf103893c88f721
 
 build:
   number: 0
@@ -18,7 +18,7 @@ build:
     - identify-cli = identify.cli:main
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools
