@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
     - editdistance
-    - python
+    - python >=3.6
 
 test:
   imports:
