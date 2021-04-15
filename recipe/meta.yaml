@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - editdistance
+    - editdistance-s
     - python >=3.6
 
 test:
