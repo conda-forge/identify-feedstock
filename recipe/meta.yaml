@@ -1,5 +1,5 @@
 {% set name = "identify" %}
-{% set version = "2.3.7" %}
+{% set version = "2.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,8 +7,8 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/chriskuehl/identify/archive/v{{ version }}.tar.gz
-  sha256: a04a345a9ceb921e3a2b4749e5b19fd4348c960eaac7cf18f4395461073a543d
+  url: https://github.com/pre-commit/identify/archive/v{{ version }}.tar.gz
+  sha256: 15ff58ba6573b68a9747c7798ed514b97493c3cc39a7431ff3745c511a293083
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - pip
     - setuptools
   run:
-    - editdistance-s
+    - ukkonen
     - python >=3.6
 
 test:
@@ -40,7 +40,7 @@ test:
     - pytest tests
 
 about:
-  home: https://github.com/chriskuehl/identify
+  home: https://github.com/pre-commit/identify
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -49,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - nicoddemus
+    - tdegeus
