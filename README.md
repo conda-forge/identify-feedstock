@@ -1,7 +1,7 @@
 About identify
 ==============
 
-Home: https://github.com/chriskuehl/identify
+Home: https://github.com/pre-commit/identify
 
 Package license: MIT
 
@@ -116,5 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@deadsnakes-issues-bot](https://github.com/deadsnakes-issues-bot/)
 * [@nicoddemus](https://github.com/nicoddemus/)
+* [@tdegeus](https://github.com/tdegeus/)
 
