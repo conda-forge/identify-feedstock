@@ -1,5 +1,5 @@
 {% set name = "identify" %}
-{% set version = "2.5.26" %}
+{% set version = "2.5.27" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/pre-commit/identify/archive/v{{ version }}.tar.gz
-  sha256: d56ff4e77c3a7582566dd803a831bf7e2ef1233aedf356b1755b3f722a3a13ce
+  sha256: 99ae96116cb91e0dd2df620b908606deabed077252352f676dad770d9927e191
 
 build:
   number: 0
