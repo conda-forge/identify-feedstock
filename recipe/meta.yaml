@@ -11,7 +11,7 @@ source:
   sha256: bc482067adefd59ca945a4b75fd144d9395add861a0e11c1c2f32c71717d645a
 
 build:
-  number: 0
+  number: 1
   script: python -m pip install . --no-deps --ignore-installed
   noarch: python
   entry_points:
@@ -19,18 +19,19 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - ukkonen
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   imports:
     - identify
   requires:
     - pytest
+    - python {{ python_min }}
   source_files:
     - LICENSE
     - tests
