@@ -23,7 +23,6 @@ requirements:
     - pip
     - setuptools
   run:
-    - ukkonen
     - python >={{ python_min }}
 
 test:
@@ -38,7 +37,8 @@ test:
     - setup.py
   commands:
     - identify-cli --help
-    - pytest tests
+    # test_license_* tests needs ukonnen which is an optional dependency
+    - pytest tests -k 'not test_license'
 
 about:
   home: https://github.com/pre-commit/identify
